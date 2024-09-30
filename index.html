@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast.studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap');
+        
+        .portfolio-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .portfolio-scroll {
+            display: inline-block;
+            animation: scroll 60s linear infinite;
+        }
+        .portfolio-item {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body class="font-['Raleway'] text-gray-800 bg-white">
+    <header class="fixed w-full bg-white bg-opacity-90 z-50">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-2xl font-['Playfair_Display'] font-bold">🖌️breakfast.s2do</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="hover:text-gray-600 transition">Home</a>
+                    <a href="#portfolio" class="hover:text-gray-600 transition">Portfolio</a>
+                    <a href="#work" class="hover:text-gray-600 transition">Work</a>
+                    <a href="#about" class="hover:text-gray-600 transition">About</a>
+                    <a href="#contact" class="hover:text-gray-600 transition">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="h-screen flex items-center justify-center relative bg-cover bg-center" style="background-image: url('asset/1.jpg');">
+            <div class="absolute inset-0 bg-blue-600 bg-opacity-50"></div>
+            <div class="relative text-center text-white z-10">
+                <h1 class="text-6xl font-bold mb-2">Breakfast</h1>
+                <p class="text-xl">Studio</p>
+                <p class="text-xl">Graphic Design</p>
+            </div>
+        </section>
+        
+        
+        <section id="work" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-['Playfair_Display'] font-bold mb-12 text-center">My Work</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img src="asset/5.jpg" alt="Project 1" class="w-full h-48 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Character Design</h3>
+                        <p>Creating cohesive visual identities for forward-thinking brands.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img src="asset/1.jpg" alt="Project 2" class="w-full h-48 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Logo Design</h3>
+                        <p>Crafting eye-catching print materials that leave a lasting impression.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <img src="asset/5.jpg" alt="Project 3" class="w-full h-48 object-cover mb-4 rounded">
+                        <h3 class="text-xl font-semibold mb-2">Packaging Design</h3>
+                        <p>Bringing ideas to life through vibrant digital illustrations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="asset/392887322_158891100631670_2908594921256223371_n.jpg" alt="Jamie Lee" class="rounded-full w-64 h-64 object-cover mx-auto">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-4xl font-['Playfair_Display'] font-bold mb-6">About Us</h2>
+                        <p class="mb-4">We are graphic Design studio, a passionate graphic designer with a keen eye for detail and a love for visual storytelling. With over 5 years of experience, I specialize in creating designs that not only look beautiful but also communicate effectively.</p>
+                        <p>My approach combines creativity with strategic thinking, ensuring that each project not only meets but exceeds client expectations. Let's bring your vision to life!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="py-20 bg-gradient-to-r from-yellow-200 to-blue-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-['Playfair_Display'] font-bold mb-12 text-center text-white ">Portfolio</h2>
+                <div class="portfolio-container">
+                    <div class="portfolio-scroll">
+                        <div class="portfolio-item">
+                            <img src="gallery/8.1.jpg" alt="Portfolio 1" class="w-auto h-64 object-cover rounded">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="gallery/56.JPG" alt="Portfolio 2" class="w-auto h-64 object-cover rounded">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="gallery/3.jpg" alt="Portfolio 3" class="w-auto h-64 object-cover rounded">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="gallery/27.JPG" alt="Portfolio 3" class="w-auto h-64 object-cover rounded">
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="gallery/2.jpg" alt="Portfolio 3" class="w-auto h-64 object-cover rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-['Playfair_Display'] font-bold mb-12 text-center">Get discount 10%</h2>
+                <div class="max-w-md mx-auto">
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-purple-700 transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>ig:breakfast.s2do</p><p>mail:breakfaststudio57@gmail.com</p>
+            <p>&copy; 2023 Breakfast studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Duplicate portfolio items for seamless scrolling
+        const portfolioScroll = document.querySelector('.portfolio-scroll');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        portfolioItems.forEach(item => {
+            const clone = item.cloneNode(true);
+            portfolioScroll.appendChild(clone);
+        });
+    </script>
+</body>
+</html>
