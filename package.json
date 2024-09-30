@@ -1,23 +1,16 @@
 {
-  "name": "genth-css_day5",
+  "name": "responsive-website-with-tailwind-neetibut",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thiramet27/genth-css_day5.git"
+    "build": "tailwindcss -i ./src/input.css -o ./public/output.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./public/output.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/thiramet27/genth-css_day5/issues"
-  },
-  "homepage": "https://github.com/thiramet27/genth-css_day5#readme",
+  "description": "",
   "dependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
